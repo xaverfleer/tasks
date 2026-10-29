@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import li.fleer.tasks.dto.TaskDto;
 import li.fleer.tasks.services.TaskService;
 
 @RestController
@@ -19,7 +20,7 @@ class TaskController {
     }
 
     @GetMapping("/")
-    public List<String> getTasks() {
+    public List<TaskDto> getTasks() {
         return this.taskService.getTasks();
     }
 
