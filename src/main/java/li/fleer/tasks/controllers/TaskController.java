@@ -3,6 +3,7 @@ package li.fleer.tasks.controllers;
 import java.util.List;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -22,6 +23,11 @@ class TaskController {
     @GetMapping("/")
     public List<TaskDto> getTasks() {
         return this.taskService.getTasks();
+    }
+
+    @GetMapping("/{id}")
+    public TaskDto getTask(@PathVariable Long id) {
+        return new TaskDto(id, "some title 02");
     }
 
 }
