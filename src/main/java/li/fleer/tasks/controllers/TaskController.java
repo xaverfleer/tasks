@@ -4,9 +4,12 @@ import java.util.List;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import li.fleer.tasks.dto.CreateTaskRequest;
 import li.fleer.tasks.dto.TaskDto;
 import li.fleer.tasks.services.TaskService;
 
@@ -28,6 +31,11 @@ class TaskController {
     @GetMapping("/{id}")
     public TaskDto getTask(@PathVariable Long id) {
         return new TaskDto(id, "some title 02");
+    }
+
+    @PostMapping("/")
+    public TaskDto createTask(@RequestBody CreateTaskRequest req) {
+        return taskService.createTask(req);
     }
 
 }
