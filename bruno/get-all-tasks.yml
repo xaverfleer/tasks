@@ -1,6 +1,7 @@
 info:
-  name: get-tasks
+  name: get-all-tasks
   type: http
+  seq: 1
 
 http:
   method: GET
