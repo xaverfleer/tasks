@@ -1,10 +1,10 @@
-package li.fleer.tasks.entities;
+package li.fleer.tasks.task.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import li.fleer.tasks.dto.TaskDto;
+import li.fleer.tasks.task.dto.TaskDto;
 
 @Entity
 public class Task {

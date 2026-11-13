@@ -1,13 +1,13 @@
-package li.fleer.tasks.services;
+package li.fleer.tasks.task.services;
 
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import li.fleer.tasks.dto.CreateTaskRequest;
-import li.fleer.tasks.dto.TaskDto;
-import li.fleer.tasks.entities.Task;
-import li.fleer.tasks.repositories.TaskRepository;
+import li.fleer.tasks.task.dto.CreateTaskRequest;
+import li.fleer.tasks.task.dto.TaskDto;
+import li.fleer.tasks.task.entities.Task;
+import li.fleer.tasks.task.repositories.TaskRepository;
 
 @Service
 public class TaskService {

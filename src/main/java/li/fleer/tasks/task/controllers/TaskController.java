@@ -1,4 +1,4 @@
-package li.fleer.tasks.controllers;
+package li.fleer.tasks.task.controllers;
 
 import java.util.List;
 
@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import li.fleer.tasks.dto.CreateTaskRequest;
-import li.fleer.tasks.dto.TaskDto;
-import li.fleer.tasks.services.TaskService;
+import li.fleer.tasks.task.dto.CreateTaskRequest;
+import li.fleer.tasks.task.dto.TaskDto;
+import li.fleer.tasks.task.services.TaskService;
 
 @RestController
 @RequestMapping("/api/tasks")
